@@ -1,9 +1,10 @@
-import pytest
-
 from pages.search import AmazonSearchPage
 from pages.result import AmazonResultPage
 
-def test_amazon_search(browser, phrase):
+
+def test_amazon_search(browser):
+
+    phrase = 'Eloquent JavaScript'
 
     search_page = AmazonSearchPage(browser)
     result_page = AmazonResultPage(browser)
